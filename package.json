@@ -1,7 +1,7 @@
 {
   "name": "@mtrueblood3/rcl",
   "description": "Test package",
-  "version": "3.20.2",
+  "version": "null-alpha.2+d6e6742",
   "private": false,
   "dependencies": {
     "@babel/preset-typescript": "^7.8.3",
@@ -50,5 +50,6 @@
     "lerna": "^3.4.3",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
-  }
+  },
+  "gitHead": "d6e6742853e1f138ace91903e552794ebd600e23"
 }

@@ -1,7 +1,7 @@
 {
   "name": "@mtrueblood3/toggle",
   "description": "A simple toggle component",
-  "version": "3.20.2",
+  "version": "null-alpha.2+d6e6742",
   "license": "MIT",
   "author": "Matt Trueblood",
   "main": "dist/index.ts",
@@ -35,5 +35,5 @@
     "react": "^16.12.2",
     "react-dom": "^16.12.2"
   },
-  "gitHead": "96300c7a06561cbced372cceabe3d97cda5a83c5"
+  "gitHead": "d6e6742853e1f138ace91903e552794ebd600e23"
 }
