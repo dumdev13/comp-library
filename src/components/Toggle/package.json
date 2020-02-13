@@ -1,7 +1,7 @@
 {
   "name": "@mtrueblood3/toggle",
   "description": "A simple toggle component",
-  "version": "3.20.1",
+  "version": "3.20.2",
   "license": "MIT",
   "author": "Matt Trueblood",
   "main": "dist/index.ts",
