@@ -1,0 +1,39 @@
+{
+  "name": "@mtrueblood3/toggle",
+  "description": "A simple toggle component",
+  "version": "3.20.1",
+  "license": "MIT",
+  "author": "Matt Trueblood",
+  "main": "dist/index.ts",
+  "module": "src/index.js",
+  "repository": {
+    "type": "git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "transpile": "babel src -d dist --ignore '**/*.spec.js,**/*.stories.js'",
+    "clean": "rimraf dist && rimraf node_modules && rimraf package-lock.json",
+    "test": "jest --coverage --verbose --color"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react",
+      "@babel/preset-typescript"
+    ],
+    "env": {
+      "test": {
+        "plugins": [
+          "transform-es2015-modules-commonjs"
+        ]
+      }
+    }
+  },
+  "peerDependencies": {
+    "react": "^16.12.2",
+    "react-dom": "^16.12.2"
+  },
+  "gitHead": "96300c7a06561cbced372cceabe3d97cda5a83c5"
+}

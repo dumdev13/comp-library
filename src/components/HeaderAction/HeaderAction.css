@@ -1,0 +1,22 @@
+.headerAction {
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  color: black;
+}
+.headerAction:after {
+  content: "";
+  height: 3px;
+  display: inline;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  background: rgb(192, 192, 192);
+  transition: 0.2s;
+}
+
+.headerAction:hover:after {
+  width: 100%;
+}

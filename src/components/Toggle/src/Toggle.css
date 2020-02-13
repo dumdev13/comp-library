@@ -1,0 +1,79 @@
+.a2-toggle-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  visibility: visible;
+  white-space: nowrap;
+}
+.a2-toggle-label {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1rem;
+  letter-spacing: -0.1px;
+  color: #393939;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  cursor: pointer;
+}
+.a2-toggle-switch {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 3rem;
+  height: 1.5rem;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+.a2-toggle-switch::before {
+  top: 0;
+  width: 3rem;
+  height: 1.5rem;
+  border-radius: 0.9375rem;
+  background-color: #8d8d8d;
+  transition: box-shadow 70ms cubic-bezier(0.2, 0, 1, 0.9),
+    background-color 70ms cubic-bezier(0.2, 0, 1, 0.9);
+}
+.a2-toggle-switch::after,
+.a2-toggle-switch::before {
+  box-sizing: border-box;
+  position: absolute;
+  display: block;
+  content: "";
+}
+.a2-toggle-text {
+  position: absolute;
+  margin-left: 3.5rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.125rem;
+  letter-spacing: 0.16px;
+  user-select: none;
+  text-transform: capitalize;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.a2-toggle-switch::after {
+  top: 0.1875rem;
+  left: 0.1875rem;
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: transform 150ms cubic-bezier(0.2, 0, 1, 0.9);
+}
+.a2-toggle-input:checked + .a2-toggle-label > .a2-toggle-switch::after {
+  background-color: fff;
+  transform: translateX(1.5rem);
+}
+.a2-toggle-input:checked + .a2-toggle-label > .a2-toggle-switch::before {
+  background-color: #245ea1;
+  transition: background-color 200ms ease-in;
+}
